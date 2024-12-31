@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Paper</title>
+    <title>Tags on Sunjiyi-Blog2</title>
     <link>https://a233a2.github.io/blog2/tags/</link>
-    <description>Recent content in Tags on Paper</description>
+    <description>Recent content in Tags on Sunjiyi-Blog2</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© 2024, lee.so</copyright>
+    <copyright>© 2024, sunjiyi</copyright>
     <atom:link href="https://a233a2.github.io/blog2/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Index</title>

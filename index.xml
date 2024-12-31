@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paper</title>
+    <title>Sunjiyi-Blog2</title>
     <link>https://a233a2.github.io/blog2/</link>
-    <description>Recent content on Paper</description>
+    <description>Recent content on Sunjiyi-Blog2</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© 2024, lee.so</copyright>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>© 2024, sunjiyi</copyright>
+    <lastBuildDate>Tue, 31 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://a233a2.github.io/blog2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://a233a2.github.io/blog2/contact/</link>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://a233a2.github.io/blog2/contact/</guid>
+      <description>&lt;p&gt;喜欢可以关注一下 &lt;a href=&#34;https://space.bilibili.com/37767944&#34;&gt;@Bilibili&lt;/a&gt;或者&lt;a href=&#34;https://github.com/a233a2&#34;&gt;@Github&lt;/a&gt;等。&lt;/p&gt;&#xA;&lt;p&gt;如果有任何问题请发邮件联系：  &lt;br&gt;&#xA;&lt;a href=&#34;mailto:sunjiyi666@foxmail.com&#34;&gt;sunjiyi666@foxmail.com&lt;/a&gt; / &lt;a href=&#34;mailto:sunjiyi666@gmail.com&#34;&gt;sunjiyi666@gmail.com&lt;/a&gt;    &lt;br&gt;&#xA;QQ同foxmail/QQ邮箱号，有问题欢迎骚扰。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://a233a2.github.io/blog2/about/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://a233a2.github.io/blog2/about/</guid>
+      <description>&lt;p&gt;2024年12月31日！建站成功！      &lt;br&gt;&#xA;大家好 这是我的第二笔记仓库。   &lt;br&gt;&#xA;喜欢可以关注一下 &lt;a href=&#34;https://space.bilibili.com/37767944&#34;&gt;@Bilibili&lt;/a&gt;或者&lt;a href=&#34;https://github.com/a233a2&#34;&gt;@Github&lt;/a&gt;等。&lt;/p&gt;&#xA;&lt;p&gt;如果有任何问题请发邮件联系：  &lt;br&gt;&#xA;&lt;a href=&#34;mailto:sunjiyi666@foxmail.com&#34;&gt;sunjiyi666@foxmail.com&lt;/a&gt; / &lt;a href=&#34;mailto:sunjiyi666@gmail.com&#34;&gt;sunjiyi666@gmail.com&lt;/a&gt;    &lt;br&gt;&#xA;QQ同foxmail/QQ邮箱号，有问题欢迎骚扰。&lt;/p&gt;</description>
+    </item>
     <item>
       <title></title>
       <link>https://a233a2.github.io/blog2/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       <guid>https://a233a2.github.io/blog2/archives/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://a233a2.github.io/blog2/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/about/</guid>
-      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;&#xA;&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>https://a233a2.github.io/blog2/contact/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/contact/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/nanxiaobei&#34;&gt;github.com/nanxiaobei&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://lee.so&#34;&gt;lee.so&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
