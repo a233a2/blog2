@@ -7,21 +7,6 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2024, lee.so</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://a233a2.github.io/blog2/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Syntax</title>
-      <link>https://a233a2.github.io/blog2/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/categories/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Themes</title>
-      <link>https://a233a2.github.io/blog2/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/categories/themes/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

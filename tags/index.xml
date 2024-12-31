@@ -7,62 +7,12 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2024, lee.so</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://a233a2.github.io/blog2/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Css</title>
-      <link>https://a233a2.github.io/blog2/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://a233a2.github.io/blog2/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/html/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Index</title>
       <link>https://a233a2.github.io/blog2/tags/index/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://a233a2.github.io/blog2/tags/index/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>https://a233a2.github.io/blog2/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Privacy</title>
-      <link>https://a233a2.github.io/blog2/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/privacy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Shortcodes</title>
-      <link>https://a233a2.github.io/blog2/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Text</title>
-      <link>https://a233a2.github.io/blog2/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/text/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Emoji</title>
-      <link>https://a233a2.github.io/blog2/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/tags/emoji/</guid>
       <description></description>
     </item>
   </channel>
