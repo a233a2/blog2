@@ -1,0 +1,483 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en"
+  dir="ltr"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>YSYX学习-1-Linux系统安装和基本使用 - Sunjiyi-Blog2</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="学习记录： 学习记录。 
+内容：The Missing Semester of Your CS Education 中文版
+LinuxBasic
+GUI和CLI是两种用户与计算机进行交互的方式。 
+GUI（Graphical User Interface，图形用户界面）：GUI是一种基于图形化界面的操作系统用户界面。    
+CLI（Command Line Interface，命令行界面）：CLI是一种通过在命令行或终端界面输入命令来与计算机进行交互的用户界面。  
+安装PA所需工具
+apt-get install build-essential    # build-essential packages, include binary utilities, gcc, make, and so on
+apt-get install man                # on-line reference manual
+apt-get install gcc-doc            # on-line reference manual for gcc
+apt-get install gdb                # GNU debugger
+apt-get install git                # revision control system
+apt-get install libreadline-dev    # a library used later
+apt-get install libsdl2-dev        # a library used later
+Ubuntu 中安装中文输入法" />
+  <meta name="author" content="sunjiyi" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://a233a2.github.io/blog2/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://a233a2.github.io/blog2/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/ec9b04a2325f2fad64b3a20fc47b17f0?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://a233a2.github.io/blog2/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://a233a2.github.io/blog2/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://a233a2.github.io/blog2/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="https://a233a2.github.io/blog2/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://a233a2.github.io/blog2/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.1">
+
+  
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="YSYX学习-1-Linux系统安装和基本使用">
+  <meta itemprop="description" content="在此记录本人在学习YSYX项目时遇到的难题与解决方式。">
+  <meta itemprop="datePublished" content="2024-12-16T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-16T00:00:00+00:00">
+  <meta itemprop="wordCount" content="256">
+  <meta itemprop="keywords" content="YSYX">
+  
+  <meta property="og:url" content="https://a233a2.github.io/blog2/post/ysyx%E5%AD%A6%E4%B9%A0-1-linux%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+  <meta property="og:site_name" content="Sunjiyi-Blog2">
+  <meta property="og:title" content="YSYX学习-1-Linux系统安装和基本使用">
+  <meta property="og:description" content="在此记录本人在学习YSYX项目时遇到的难题与解决方式。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-12-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-16T00:00:00+00:00">
+    <meta property="article:tag" content="YSYX">
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="YSYX学习-1-Linux系统安装和基本使用">
+  <meta name="twitter:description" content="在此记录本人在学习YSYX项目时遇到的难题与解决方式。">
+
+  
+  
+
+  
+  <link rel="canonical" href="https://a233a2.github.io/blog2/post/ysyx%E5%AD%A6%E4%B9%A0-1-linux%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="https://a233a2.github.io/blog2/"
+      >Sunjiyi-Blog2</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/blog2/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/blog2/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/real_sunjiyi"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/a233a2"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">YSYX学习-1-Linux系统安装和基本使用</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Dec 16, 2024</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>sunjiyi</span>
+      
+    </div>
+    
+  </header>
+
+  <section><p>学习记录： <a href="https://docs.qq.com/sheet/DQ0lRY2tNb2VIZWVB?newPad=1&amp;newPadType=clone&amp;tab=BB08J4&amp;_t=1728471922939&amp;u=555637143d844e0f8b3d1a7c9c34bebf">学习记录</a>。 <br>
+内容：<a href="https://missing-semester-cn.github.io/">The Missing Semester of Your CS Education 中文版</a></p>
+<h2 id="linuxbasic">LinuxBasic</h2>
+<p>GUI和CLI是两种用户与计算机进行交互的方式。 <br>
+GUI（Graphical User Interface，图形用户界面）：GUI是一种基于图形化界面的操作系统用户界面。    <br>
+CLI（Command Line Interface，命令行界面）：CLI是一种通过在命令行或终端界面输入命令来与计算机进行交互的用户界面。  <br>
+安装PA所需工具</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt-get install build-essential    <span style="color:#75715e"># build-essential packages, include binary utilities, gcc, make, and so on</span>
+</span></span><span style="display:flex;"><span>apt-get install man                <span style="color:#75715e"># on-line reference manual</span>
+</span></span><span style="display:flex;"><span>apt-get install gcc-doc            <span style="color:#75715e"># on-line reference manual for gcc</span>
+</span></span><span style="display:flex;"><span>apt-get install gdb                <span style="color:#75715e"># GNU debugger</span>
+</span></span><span style="display:flex;"><span>apt-get install git                <span style="color:#75715e"># revision control system</span>
+</span></span><span style="display:flex;"><span>apt-get install libreadline-dev    <span style="color:#75715e"># a library used later</span>
+</span></span><span style="display:flex;"><span>apt-get install libsdl2-dev        <span style="color:#75715e"># a library used later</span>
+</span></span></code></pre></div><p>Ubuntu 中安装中文输入法</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#安装框架</span>
+</span></span><span style="display:flex;"><span>sudo apt install ibus
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#切换框架</span>
+</span></span><span style="display:flex;"><span>im-config -s ibus
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#由于Ubuntu Desktop 20.04使用的是GNOME桌面，所以需要安装相应的平台支持包</span>
+</span></span><span style="display:flex;"><span>sudo apt install ibus-gtk ibus-gtk3
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#选择简体拼音输入法，完成安装</span>
+</span></span><span style="display:flex;"><span>sudo apt install ibus-pinyin
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#完成安装后，将中文输入法添加到输入源选项中</span>
+</span></span></code></pre></div><p>以上摘录自：https://blog.csdn.net/Aimonii/article/details/141260938</p>
+<h2 id="linux基础课程概览与shell">Linux基础课程概览与shell</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>missing:~$ 
+</span></span></code></pre></div><p>$ 符号表示您现在的身份不是 root 用户,位置是 ~ (表示 “home”)。</p>
+<h4 id="echo命令">echo命令</h4>
+<p>‌echo命令是Linux中用于在终端输出字符串的命令，常用于脚本编程、调试和显示变量值。</p>
+<h4 id="which命令">which命令</h4>
+<p>用于定位执行文件的路径。当输入一个命令时，which 会在环境变量 PATH 所指定的路径中搜索每个目录，以查找指定的可执行文件。 可以使用 which 程序。通过直接指定需要执行的程序的路径来执行该程序。</p>
+<h4 id="pwd命令">pwd命令</h4>
+<p>获取当前工作目录。</p>
+<h4 id="cd命令">cd命令</h4>
+<p>切换目录 . 表示的是当前目录，而 .. 表示上级目录</p>
+<h4 id="ls命令">ls命令</h4>
+<p>查看指定目录下包含哪些文件 利用第一个参数指定目录，否则 ls 会打印当前目录下的文件。       <br>
+通常，在执行程序时使用 -h 或 &ndash;help 标记可以打印帮助信息，以便了解有哪些可用的标记或选项。</p>
+<blockquote>
+<p>ls: List directory contents
+dir: Briefly list directory contents
+dir: Verbosely list directory contents
+dircolors: Color setup for ls</p>
+<p>ls -l是Linux和unix命令，意思指以长格式的形式查看当前目录下所有可见文件的详细属性。</p>
+</blockquote>
+<h4 id="man命令">man命令</h4>
+<p>它会接受一个程序名作为参数，然后将它的文档（用户手册）展现给您。注意，使用 q 可以退出该程序。</p>
+<h4 id="cat命令">cat命令</h4>
+<p>cat命令是Linux系统中用于查看、创建和合并文件内容的工具。‌它源自英文单词“concatenate”，意为“连接”。cat命令的基本功能是将多个文件的内容串联起来显示在标准输出（通常是终端）上。</p>
+<blockquote>
+<p>查看单个文件的内容‌：使用命令 cat filename。
+创建新文件并输入内容‌：使用命令 cat &gt; newfile，用户可以在终端中输入内容，然后使用Ctrl+D保存文件。
+‌合并多个文件的内容‌：使用命令 cat file1 file2，这将合并file1和file2的内容并显示在终端上。
+‌重定向输出‌：可以将命令的输出重定向到文件中，使用 &gt; 符号创建新文件，使用 &raquo; 符号将内容附加到现有文件。‌</p>
+</blockquote>
+<h4 id="touch命令">touch命令</h4>
+<p>创建一个文件。</p>
+<h4 id="mkdir命令">mkdir命令</h4>
+<p>创建新文件夹</p>
+<h4 id="rm命令">rm命令</h4>
+<p>删除指定的文件。<strong>谨慎使用</strong></p>
+<blockquote>
+<p>rm &lt;文件名&gt;：删除指定的文件。
+rm -r &lt;目录名&gt;：递归删除指定目录下的所有文件和子目录。
+rm -f &lt;文件名&gt;：强制删除，不进行确认提示。
+rm -i &lt;文件名&gt;：在删除前进行确认提示。</p>
+</blockquote>
+<h4 id="重定向输入输出流">重定向输入输出流</h4>
+<p><code>&lt; file</code>和<code> &gt; file</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo hello &gt; hello.txt  
+</span></span></code></pre></div><p>给hello.txt里面写入hello。</p>
+<h4 id="sudo">sudo</h4>
+<p>root提升权限。</p>
+<h4 id="chmod命令">chmod命令</h4>
+<p>chmod（change mode）命令是用于控制用户对文件的权限的命令。     <br>
+Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用户组（Group）、其它用户（Other Users）如下：  <br>
+<img src="1.1.png" alt="">   <br>
+只有文件所有者和超级用户可以修改文件或目录的权限。可以使用绝对模式（八进制数字模式），符号模式指定文件的权限，而使用权限则为所有使用者。   <br>
+<code>chmod 777 file</code> 给全部权限打开。读 + 写 + 执行</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod <span style="color:#ae81ff">777</span> file//表示User、Group、及Other的权限都设为rwx
+</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">764</span> file//表示User、Group、及Other的权限分别为rwx、rw-、r--
+</span></span></code></pre></div><p>以上摘录自：https://blog.csdn.net/qq_52836452/article/details/129642664</p>
+<h4 id="sh命令">sh命令</h4>
+<p>sh是linux中运行shell的命令，是shell的解释器，shell脚本是linux中壳层与命令行界面，用户可以在shell脚本输入命令来执行各种各样的任务。
+shell程序必须以“#!/bin/sh”开始。shell中#一般表示注释的意思，所以很多时候认为&quot;#!&ldquo;也是注释，但实际上并不是。</p>
+<blockquote>
+<p>PS
+&ldquo;#!/bin/sh&quot;是对shell的声明，说明你所用的是哪种类型的shell及其路径所在。     <br>
+#!/bin/是指此脚本使用.bin/sh来执行。    <br>
+#!是特殊的表示符，其后面跟的是解释此脚本的shell的路径，如果没有声明，则脚本将在默认的shell中执行，默认shell是由用户所在的系统定义为执行shell脚本，如果脚本被编写为在Kornshell ksh中运行，而默认运行shell脚本的为C shell csh,则脚本在执行过程中很可能失败。所以建议大家就把&rdquo;#!/bin/sh&quot;当成C 语言的main函数一样，写shell必须有，以使shell程序更严密。</p>
+</blockquote>
+<p>以上摘录自：https://blog.csdn.net/mrsgflmx/article/details/143429498          <br>
+WSL2下查看笔记本电量。虚拟机无此数据，无法查看。  <br>
+<img src="1.2.png" alt=""></p>
+<h2 id="shell工具和脚本">Shell工具和脚本</h2>
+<h2 id="编辑器-vim">编辑器 (Vim)</h2>
+<h2 id="数据整理">数据整理</h2>
+<h2 id="命令行环境">命令行环境</h2>
+<h2 id="版本控制git">版本控制(Git)</h2>
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://a233a2.github.io/blog2/tags/ysyx"
+      >YSYX</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    © 2024, sunjiyi
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>
