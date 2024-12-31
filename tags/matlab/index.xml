@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sunjiyi-Blog2</title>
-    <link>https://a233a2.github.io/blog2/</link>
-    <description>Recent content on Sunjiyi-Blog2</description>
+    <title>Matlab on Sunjiyi-Blog2</title>
+    <link>https://a233a2.github.io/blog2/tags/matlab/</link>
+    <description>Recent content in Matlab on Sunjiyi-Blog2</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2024, sunjiyi</copyright>
-    <lastBuildDate>Tue, 31 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://a233a2.github.io/blog2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Contact</title>
-      <link>https://a233a2.github.io/blog2/contact/</link>
-      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/contact/</guid>
-      <description>&lt;p&gt;喜欢可以关注一下 &lt;a href=&#34;https://space.bilibili.com/37767944&#34;&gt;@Bilibili&lt;/a&gt;或者&lt;a href=&#34;https://github.com/a233a2&#34;&gt;@Github&lt;/a&gt;等。&lt;/p&gt;&#xA;&lt;p&gt;主站点:&lt;a href=&#34;https://www.sunjiyi.xyz/&#34;&gt;https://www.sunjiyi.xyz/&lt;/a&gt; &lt;br&gt;&#xA;如果有任何问题请发邮件联系：  &lt;br&gt;&#xA;&lt;a href=&#34;mailto:sunjiyi666@foxmail.com&#34;&gt;sunjiyi666@foxmail.com&lt;/a&gt; / &lt;a href=&#34;mailto:sunjiyi666@gmail.com&#34;&gt;sunjiyi666@gmail.com&lt;/a&gt;    &lt;br&gt;&#xA;QQ同foxmail/QQ邮箱号，有问题欢迎骚扰。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>YSYX学习-1-Linux系统安装和基本使用</title>
-      <link>https://a233a2.github.io/blog2/post/ysyx%E5%AD%A6%E4%B9%A0-1-linux%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/post/ysyx%E5%AD%A6%E4%B9%A0-1-linux%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;学习记录： &lt;a href=&#34;https://docs.qq.com/sheet/DQ0lRY2tNb2VIZWVB?newPad=1&amp;amp;newPadType=clone&amp;amp;tab=BB08J4&amp;amp;_t=1728471922939&amp;amp;u=555637143d844e0f8b3d1a7c9c34bebf&#34;&gt;学习记录&lt;/a&gt;。 &lt;br&gt;&#xA;内容：&lt;a href=&#34;https://missing-semester-cn.github.io/&#34;&gt;The Missing Semester of Your CS Education 中文版&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;linuxbasic&#34;&gt;LinuxBasic&lt;/h2&gt;&#xA;&lt;p&gt;GUI和CLI是两种用户与计算机进行交互的方式。 &lt;br&gt;&#xA;GUI（Graphical User Interface，图形用户界面）：GUI是一种基于图形化界面的操作系统用户界面。    &lt;br&gt;&#xA;CLI（Command Line Interface，命令行界面）：CLI是一种通过在命令行或终端界面输入命令来与计算机进行交互的用户界面。  &lt;br&gt;&#xA;安装PA所需工具&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install build-essential    &lt;span style=&#34;color:#75715e&#34;&gt;# build-essential packages, include binary utilities, gcc, make, and so on&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install man                &lt;span style=&#34;color:#75715e&#34;&gt;# on-line reference manual&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install gcc-doc            &lt;span style=&#34;color:#75715e&#34;&gt;# on-line reference manual for gcc&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install gdb                &lt;span style=&#34;color:#75715e&#34;&gt;# GNU debugger&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install git                &lt;span style=&#34;color:#75715e&#34;&gt;# revision control system&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install libreadline-dev    &lt;span style=&#34;color:#75715e&#34;&gt;# a library used later&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt-get install libsdl2-dev        &lt;span style=&#34;color:#75715e&#34;&gt;# a library used later&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ubuntu 中安装中文输入法&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://a233a2.github.io/blog2/about/</link>
-      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/about/</guid>
-      <description>&lt;p&gt;2024年12月31日！建站成功！      &lt;br&gt;&#xA;大家好 这是我的第二笔记仓库。   &lt;br&gt;&#xA;主站点:&lt;a href=&#34;https://www.sunjiyi.xyz/&#34;&gt;https://www.sunjiyi.xyz/&lt;/a&gt;      &lt;br&gt;&#xA;喜欢可以关注一下 &lt;a href=&#34;https://space.bilibili.com/37767944&#34;&gt;@Bilibili&lt;/a&gt;或者&lt;a href=&#34;https://github.com/a233a2&#34;&gt;@Github&lt;/a&gt;等。&lt;/p&gt;&#xA;&lt;p&gt;如果有任何问题请发邮件联系：  &lt;br&gt;&#xA;&lt;a href=&#34;mailto:sunjiyi666@foxmail.com&#34;&gt;sunjiyi666@foxmail.com&lt;/a&gt; / &lt;a href=&#34;mailto:sunjiyi666@gmail.com&#34;&gt;sunjiyi666@gmail.com&lt;/a&gt;    &lt;br&gt;&#xA;QQ同foxmail/QQ邮箱号，有问题欢迎骚扰。&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://a233a2.github.io/blog2/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DRCAN-Learn-Blog-Advance</title>
       <link>https://a233a2.github.io/blog2/post/drcan-learn-advance/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://a233a2.github.io/blog2/post/drcan-learn-advance/</guid>
       <description>&lt;p&gt;此Blog记录了本人按照DRCAN视频推荐的学习顺序来系统学习DRCAN发表的控制相关视频。博客作为笔记使用。&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-状态空间表达&#34;&gt;1-状态空间表达&lt;/h3&gt;&#xA;&lt;p&gt;以一个质量块-弹簧-阻尼器系统来进行分析：&lt;br&gt;&#xA;&lt;img src=&#34;1-1.jpg&#34; alt=&#34;1&#34;&gt;   &lt;br&gt;&#xA;状态空间表达是即为：&lt;strong&gt;系统输入输出状态变量的一个集合，用一阶微分方程的形式表达出来。&lt;/strong&gt;&#xA;&lt;img src=&#34;1-2.png&#34; alt=&#34;2&#34;&gt;&#xA;状态空间表达与传递函数之间的关系：包括转换方程，以及重要结论：&lt;strong&gt;|SI-A|矩阵的特征值就是传递函数的极点！&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-状态空间方程的解&#34;&gt;2-状态空间方程的解&lt;/h3&gt;&#xA;&lt;p&gt;有点难以推导且认为推导过程不太重要&lt;br&gt;&#xA;&lt;img src=&#34;21.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;22.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;23.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;3-相图-相轨迹&#34;&gt;3-相图-相轨迹&lt;/h3&gt;&#xA;&lt;p&gt;相轨迹是系统的状态随时间变化的轨迹。当时间变化时，系统的状态点在状态空间中移动，这条移动的轨迹就是相轨迹。&lt;/p&gt;&#xA;&lt;p&gt;对于一个阻尼摆，系统的能量会逐渐衰减，最终趋于静止。其相轨迹不会形成闭合的曲线，而是一个逐渐收缩的螺旋，最终收敛到平衡点（摆静止的位置）。这说明系统是稳定的，且有能量损失。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;31.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;可以通过分析导数正负来判别该点的稳定性，后面结论重要一些。&lt;br&gt;&#xA;&lt;img src=&#34;32.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;特殊的一种鞍点。在此令了上述x与y的导来确定x的输出？这个有些复杂。应该是用到了线性代数的坐标变换 看不太懂。。看特征值直观点。 &lt;br&gt;&#xA;&lt;img src=&#34;33.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;对于复数的，而实部为0的特征值。是一个椭圆，Fixed Point为Center。 &lt;br&gt;&#xA;&lt;img src=&#34;34.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;特征值复数但是实部不为0的时候。 &lt;br&gt;&#xA;&lt;img src=&#34;35.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;总结上述情况。&lt;/p&gt;&#xA;&lt;h3 id=&#34;35-连续系统的离散化&#34;&gt;3.5-连续系统的离散化&lt;/h3&gt;&#xA;&lt;p&gt;采样频率至少要为原系统频率的两倍，这样才能重建出原信号。否则可能出现混叠现象，不能复现原系统变化趋势。（2倍只是下限理论值，实际工程中选取5-10倍） &lt;br&gt;&#xA;Zero Order Hold （ZOH零阶保持器），使得控制量在一个控制周期内保持不变。&lt;/p&gt;&#xA;&lt;p&gt;采样周期要与数据处理控制时间相匹配。若数据读入处理需要50ms，则小于50ms的采样周期将变得没有意义。 &lt;br&gt;&#xA;&lt;img src=&#34;3.5-1.png&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;Error   ：G(T) = ∫(0,T) exp(Aτ) dτ·B&#xA;状态空间的解输出，在离散系统下的表达形式。离散系统下不关心t，而着重与每个周期。系统输入u在一个周期内可以看作一个常数（ZOH的作用）。所以可以提取出来。&lt;/p&gt;&#xA;&lt;p&gt;使用软件将连续系统转化为离散系统 指令&lt;strong&gt;c2d(sys,f)&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;h3 id=&#34;4-相图-相轨迹动态系统分析phase-portrait爱情故事&#34;&gt;4-相图-相轨迹动态系统分析Phase Portrait爱情故事&lt;/h3&gt;&#xA;&lt;p&gt;相轨迹&lt;/p&gt;&#xA;&lt;h3 id=&#34;5-系统的可控性&#34;&gt;5-系统的可控性&lt;/h3&gt;&#xA;&lt;p&gt;讲解了对于状态空间表达的秩判据的相关内容。秩判据的相关数学证明: &lt;br&gt;&#xA;另外讲解了定义的可控性是何种意义上的可控性。 &lt;br&gt;&#xA;&lt;img src=&#34;51.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;6-李雅普诺夫稳定性&#34;&gt;6-李雅普诺夫稳定性&lt;/h3&gt;&#xA;&lt;p&gt;讲解了李雅普诺夫稳定性的严禁数学定义。以及对于状态转移矩阵A矩阵特征值的几种形式来定义李雅普诺夫的集中稳定性。 &lt;br&gt;&#xA;针对非线性系统，区别于传统解微分方程，采用李雅普诺夫第二法进行解决，在此处进行了简单的介绍。 &lt;br&gt;&#xA;&lt;img src=&#34;61.jpg&#34; alt=&#34;2&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;62.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;7-线性控制器设计&#34;&gt;7-线性控制器设计&lt;/h3&gt;&#xA;&lt;p&gt;这部分便是之前现代控制理论方面的根据期望的特征值来确定系统的不同k增益的输入。&#xA;令u=kx，对期望的$\lambda$列出闭环矩阵Acl，对Acl求特征值?（应该是 太久远了 有点遗忘）&#xA;列出以$\lambda$为未知量的方程，结合期望$\lambda$的特征值方程对应相等。求得k矩阵。&#xA;&lt;img src=&#34;71.jpg&#34; alt=&#34;2&#34;&gt; &lt;br&gt;&#xA;&lt;img src=&#34;72.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;8-lqr控制liner-quadratic-regulator&#34;&gt;8-LQR控制（Liner Quadratic Regulator）&lt;/h3&gt;&#xA;&lt;p&gt;线性二次型调节器。是一种对控制系统的目标$\lambda$进行确定的最优控制算法。 &lt;br&gt;&#xA;其设置了一种惩罚函数J，通过求得MinJ来确定系统最优的$\lambda$。进而进行线性控制器的设计。&#xA;&lt;img src=&#34;81.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;9-状态观测器设计luenberger为例&#34;&gt;9-状态观测器设计（Luenberger为例）&lt;/h3&gt;&#xA;&lt;p&gt;LQR控制等线性控制u=-kx的前提是状态x全部可测。而对于状态不可测的系统需要观测器Observer &lt;br&gt;&#xA;也是之前现代控制理论的必做题类型。观测器建立了一个新的反馈系统目标是使得观测值与实际值相差的err为0。      &lt;br&gt;&#xA;观测器也就是 根据系统现有的输入和输出 来估计系统的状态。 &lt;br&gt;&#xA;&lt;img src=&#34;91.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;另外根据之前的阻尼器-弹簧-质量块经典系统进行了观测器设计，设定两个特征值期望为-1 -1。 &lt;br&gt;&#xA;&lt;img src=&#34;92.jpg&#34; alt=&#34;2&#34;&gt; &lt;br&gt;&#xA;Simulink仿真 &lt;br&gt;&#xA;&lt;img src=&#34;93.jpg&#34; alt=&#34;2&#34;&gt; &lt;br&gt;&#xA;观测器状态空间是目标$\lambda$=-1 -1求解出来的。&#xA;Z2状态不可测，直接运行时，估计值与真实值完全重合。&#xA;在Z2hat估计值的地方对z2估计值进行赋初值为1的操作时，可以认为z2开始时估计值与真实值有了偏差。 &lt;br&gt;&#xA;此时，系统的输出图像有了偏差，z1与z2估计值有关，所以两个图像全部出现了偏差。且能够在后续过程中完成跟随观测。&#xA;&lt;img src=&#34;94.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;10-可观测性与分离原理&#34;&gt;10-可观测性与分离原理&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;10.1.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://a233a2.github.io/blog2/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://a233a2.github.io/blog2/archives/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
